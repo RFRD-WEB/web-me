@@ -1,0 +1,306 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+}
+
+body {
+  height: 100vh;
+  background: url(bacground.jpg) no-repeat center / cover;
+  padding: 50px 5%;
+}
+
+.countainer {
+  position: relative;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+  backdrop-filter: blur(15px);
+  /* transform: scale(0); */
+  animation: zoom-in 1s ease forwards;
+}
+
+@keyframes zoom-in {
+  100% {
+    transform: scale(1);
+  }
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 25px 5%;
+  /* background: white; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.animasi {
+  transform: translateY(30px);
+  opacity: 0;
+  animation: slide-in 1s ease forwards;
+  animation-delay: 1s;
+}
+
+.animasi img {
+  width: 16%;
+}
+
+@keyframes slide-in {
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.logo {
+  font-size: 29px;
+  text-decoration: none;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+}
+
+.logo span {
+  color: rgb(166, 255, 0);
+}
+
+.navbar a {
+  font-size: 18px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  margin-left: 30px;
+  border-bottom: 2px solid transparent;
+  transition: 0.4s ease-out;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  border-color: rgb(166, 255, 0);
+  color: rgb(166, 255, 0);
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 50px;
+  padding: 50px 5% 0;
+  color: rgb(255, 255, 255);
+  animation-delay: 1.5s;
+}
+
+.home-detail h1 {
+  font-size: 55px;
+  line-height: 1;
+  color: rgb(166, 255, 0);
+}
+
+.home-detail h2 {
+  font-size: 33px;
+}
+
+.home-detail p {
+  margin: 10px 0 20px;
+}
+
+.home-detail .kelas {
+  color: rgb(166, 255, 0);
+}
+
+.home-detail .download-social {
+  display: flex;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  background: rgb(166, 255, 0);
+  border: 2px solid rgb(166, 255, 0);
+  border-radius: 50px;
+  box-shadow: 0 0 10px rgb(166, 255, 0);
+  transition: 0.5s;
+  text-decoration: none;
+  color: rgb(53, 53, 53);
+}
+
+.btn:hover {
+  background: transparent;
+  box-shadow: none;
+  color: rgb(166, 255, 0);
+}
+
+.home-detail .social-icon {
+  margin-left: 20px;
+}
+
+.home-detail .social-icon a {
+  display: inline-flex;
+  padding: 8px;
+  border: 2px solid white;
+  border-radius: 20px;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  margin: 0 8px;
+  transition: 0.5s;
+}
+
+.home-detail .social-icon a:hover {
+  background: white;
+  box-shadow: 0 0 10px white;
+  color: rgb(107, 86, 60);
+}
+
+/* halaman about */
+
+.body2 {
+  height: 100vh;
+  background: url(ABOUT\ 2.jpg) no-repeat center / cover;
+  padding: 50px 5%;
+}
+
+.judul-matkul {
+  padding: 150px;
+  color: rgb(255, 255, 255);
+}
+center {
+  height: 100px;
+}
+.tabel {
+  height: 100px;
+  width: 100px;
+}
+table {
+  width: 100%;
+
+  align-items: center;
+}
+.th,
+td {
+  padding: 14px;
+}
+.th {
+  background-color: rgb(234, 245, 255);
+  color: rgb(21, 255, 0);
+}
+th {
+  color: rgb(166, 255, 0);
+}
+td {
+  color: aliceblue;
+}
+
+.tentang a {
+  display: inline-block;
+  text-align: center;
+  padding: 5px 20px;
+  background: rgb(166, 255, 0);
+  border: 2px solid rgb(166, 255, 0);
+  border-radius: 50px;
+  box-shadow: 0 0 10px rgb(166, 255, 0);
+  transition: 0.5s;
+  text-decoration: none;
+  color: rgb(53, 53, 53);
+}
+
+.tentang a:hover {
+  background: transparent;
+  box-shadow: none;
+  color: rgb(166, 255, 0);
+}
+
+.tentang p {
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+}
+
+.row h1 {
+  color: rgb(166, 255, 0);
+  display: flex;
+  justify-content: center;
+}
+
+.row p {
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  padding: 45px;
+}
+.about-img img {
+  width: 40%;
+  padding: 10px 20px 5px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* contact */
+
+.kontak {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 90px;
+  padding: 20rem;
+}
+
+.kontak {
+  text-align: center;
+  position: relative;
+  color: antiquewhite;
+}
+.kontak a {
+  display: inline-flex;
+  padding: 8px;
+  border: 2px solid white;
+  border-radius: 20px;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  margin: 0 8px;
+  transition: 0.5s;
+}
+
+.kontak a {
+  margin: auto;
+}
+.kontak a:hover {
+  background: white;
+  box-shadow: 0 0 10px white;
+  color: rgb(107, 86, 60);
+}
+/* kontak end */
+
+/* forto */
+
+.foto-to {
+  width: 100%;
+
+  align-items: center;
+}
+
+.photo-galery {
+  padding-top: 20%;
+  padding-bottom: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
+
+  height: 100px;
+  width: 100px;
+  display: flex;
+
+  grid-gap: 50px;
+}
+
+.pic img {
+  width: 100px;
+  border-radius: 15px;
+}
